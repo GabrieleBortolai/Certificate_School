@@ -1,4 +1,4 @@
-Put the xlsx file in this folder, then:
+Put the xlsx file in this folder (remove the old one), then:
 
 - Install the env from env.yml
 - conda activate cer
