@@ -182,7 +182,7 @@ def certificate_no_exam_loz(name, surname):
     doc.append(Command('\\'))
 
     with doc.create(Center()):
-        doc.append(NoEscape(r'\textcolor{red}{\fontsize{22pt}{24pt}\selectfont \textbf{A Journey through Deep Learning 2025}}'))
+        doc.append(NoEscape(r'\textcolor{red}{\fontsize{22pt}{24pt}\selectfont \textbf{Theoretical Foundations of Machine Learning (TFML) 2025}}'))
         doc.append(Command('\\'))
 
         doc.append(NoEscape(r'\vspace{0.5cm}'))
@@ -202,18 +202,14 @@ def certificate_no_exam_loz(name, surname):
 
         doc.append(NoEscape(r'\vspace{1cm}'))
         # doc.append(Command('centering'))
-        doc.append(NoEscape(r'\fontsize{12pt}{15pt}\selectfont has participated in the PhD school \textbf{A Journey through Deep Learning}, held at MaLGa Center, Genoa from the 16th to the 20th of June 2025, for a total of \textbf{40 hours}.'))
+        doc.append(NoEscape(r'\fontsize{12pt}{15pt}\selectfont has attended and actively took part in \textbf{TFML 2025}, held at MaLGa Center, University of Genoa from the 23rd to the 27rd of June 2025, for a total of \textbf{20 hours}.'))
         doc.append(Command('\\'))
 
     doc.append(NoEscape(r'\vspace{1cm}'))
-    doc.append(NoEscape(r'\textcolor{red}{\fontsize{14pt}{15pt}\selectfont\textbf{Prof.ssa Francesca Odone}}'))
-    doc.append(HFill())
-    doc.append(NoEscape(r'\textcolor{red}{\fontsize{14pt}{15pt}\selectfont\textbf{Prof.ssa Nicoletta Noceti}}'))
+    doc.append(NoEscape(r'\textcolor{red}{\fontsize{14pt}{15pt}\selectfont\textbf{Prof. Lorenzo Rosasco}}'))
     doc.append(Command('\\'))
 
-    doc.append(Command('includegraphics', options = 'scale=0.25', arguments='Odone.png'))
-    doc.append(HFill())
-    doc.append(Command('includegraphics', options = 'scale=0.15', arguments='Noceti.png'))
+    doc.append(Command('includegraphics', options = 'scale=0.8', arguments='rosasco.png'))
 
 
     # Generate the PDF
@@ -271,14 +267,11 @@ def certificate_yes_exam_loz(name, surname):
         doc.append(Command('\\'))
 
     doc.append(NoEscape(r'\vspace{1cm}'))
-    doc.append(NoEscape(r'\textcolor{red}{\fontsize{14pt}{15pt}\selectfont\textbf{Prof.ssa Francesca Odone}}'))
-    doc.append(HFill())
-    doc.append(NoEscape(r'\textcolor{red}{\fontsize{14pt}{15pt}\selectfont\textbf{Prof.ssa Nicoletta Noceti}}'))
+    doc.append(NoEscape(r'\vspace{1cm}'))
+    doc.append(NoEscape(r'\textcolor{red}{\fontsize{14pt}{15pt}\selectfont\textbf{Prof. Lorenzo Rosasco}}'))
     doc.append(Command('\\'))
 
-    doc.append(Command('includegraphics', options = 'scale=0.25', arguments='Odone.png'))
-    doc.append(HFill())
-    doc.append(Command('includegraphics', options = 'scale=0.15', arguments='Noceti.png'))
+    doc.append(Command('includegraphics', options = 'scale=0.8', arguments='rosasco.png'))
 
 
     # Generate the PDF
@@ -329,7 +322,7 @@ source_folder = Path("./")
 name_surname_list = file[['First name', 'Last name']].values.tolist()
 
 schools = ["mlv", "loz"]
-school = int(input("scegliere la scuoa 0 - MLV, 1 - Rosasco"))
+school = int(input("scegliere la scuola 0 - MLV, 1 - Rosasco "))
 
 if schools[school] == "mlv":
 
