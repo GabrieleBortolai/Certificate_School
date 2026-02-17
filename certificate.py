@@ -243,7 +243,7 @@ def certificate_yes_exam_loz(name, surname):
     doc.append(Command('\\'))
 
     with doc.create(Center()):
-        doc.append(NoEscape(r'\textcolor{red}{\fontsize{22pt}{24pt}\selectfont \textbf{A Journey through Deep Learning 2025}}'))
+        doc.append(NoEscape(r'\textcolor{red}{\fontsize{22pt}{24pt}\selectfont \textbf{Theoretical Foundations of Machine Learning (TFML) 2025}}'))
         doc.append(Command('\\'))
 
         doc.append(NoEscape(r'\vspace{0.5cm}'))
@@ -263,7 +263,7 @@ def certificate_yes_exam_loz(name, surname):
 
         doc.append(NoEscape(r'\vspace{1cm}'))
         # doc.append(Command('centering'))
-        doc.append(NoEscape(r'\fontsize{12pt}{15pt}\selectfont has participated in the PhD school \textbf{A Journey through Deep Learning}, held at MaLGa Center, Genoa from the 16th to the 20th of June 2025, for a total of \textbf{40 hours}, and passed the final examination.'))
+        doc.append(NoEscape(r'\fontsize{12pt}{15pt}\selectfont  has attended and actively took part in \textbf{TFML 2025}, held at MaLGa Center, Genoa from the 23rd to the 27th of June 2025, for a total of \textbf{20 hours}, and passed the final examination.'))
         doc.append(Command('\\'))
 
     doc.append(NoEscape(r'\vspace{1cm}'))
